@@ -33,7 +33,7 @@ export default function Card({id, min, max, name, weather, img, onClose}) {
           <span className={`${cs.info_temp}`}>{max}º</span>
         </li>
         <li>
-        <img className={`${cs.info_icon}`} src={`http://openweathermap.org/img/wn/${img}@2x.png`} alt="weather icon" />
+        <img className={`${cs.info_icon}`} src={`https://openweathermap.org/img/wn/${img}@2x.png`} alt="weather icon" />
         </li>
       </ul>
     </Link>
