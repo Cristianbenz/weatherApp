@@ -1,0 +1,40 @@
+.container {
+  width: 70%;
+  height: 800px;
+  border-radius: 5px;
+  margin: auto;
+  background-color: rgba(46, 40, 40, 0.671);
+	backdrop-filter: blur(4px);
+  padding: 50px;
+	font-size: 48px;
+}
+
+.name {
+  font-size: 100px;
+	text-align: center;
+	font-weight: bolder;
+	color: black;
+}
+
+
+.infoContainer{
+	display: flex;
+	padding-top: 180px;
+	justify-content: center;
+	gap: 200px;
+}
+
+.infoContainer div {
+	display: flex;
+	gap: 100px;
+}
+
+.infoContainer ul {
+	list-style-type: none;
+	color: antiquewhite;
+}
+
+.infoImg{
+	width: 250px;
+	height: auto;
+}

@@ -1,0 +1,30 @@
+.searchCard {
+  background-color: rgba(128, 128, 128, 0.445);
+  font-size: 42px;
+  width: max-content;
+  height: max-content;
+  padding: 70px 90px;
+  margin: 300px auto;
+  color: black;
+  font-weight: 600;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+}
+
+.container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 1.3rem;
+  padding: 15px 30px;
+  margin: 0 auto;
+}
+
+.loading {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  right: 50%;
+  font-size: 30px;
+  color: black;
+}

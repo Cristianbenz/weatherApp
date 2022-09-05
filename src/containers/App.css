@@ -1,0 +1,29 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  background-image: url('https://images.ecestaticos.com/JYWtDktlcMuibPaxE4QGsQmLJOE=/4x110:2119x1302/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F566%2F166%2Fe24%2F566166e242c19971965461dca9509292.jpg');
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.App {
+  display: flex;
+}
+
+button {
+  border: none;
+  border-radius: 3px;
+  padding: 5px 8px;
+}
+
+button.primary {
+  background-color: rgb(236, 236, 215);
+}
+
+button.danger {
+  background-color: rgb(151, 93, 0);
+}
