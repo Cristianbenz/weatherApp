@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import cs from './card.module.css'
 
 export default function Card({id, min, max, name, weather, img, onClose}) {
-  // acá va tu código
   let state = '';
 
   switch(weather) {
@@ -17,6 +16,8 @@ export default function Card({id, min, max, name, weather, img, onClose}) {
     default:
       state = cs.sunny
   }
+
+  name = name.length > 17 ? `${name.substring(0, 17)}...` : name
 
   return (
   <div className={`${cs.card} ${state} `}>

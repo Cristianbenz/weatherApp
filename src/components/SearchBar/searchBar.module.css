@@ -1,27 +1,33 @@
+.form {
+	display: flex;
+	gap: 15px;
+  width: 100%;
+}
+
 .input {
-    width: 60%;
-    height: 2rem;
-    margin-right: 1rem;
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid black;
-    font-weight: bolder;
-    color: antiquewhite;
+  width: 80%;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+	border-right: 1px solid black;
+  font-weight: bolder;
+  color: antiquewhite;
 }
 
 ::placeholder {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .button {
-    background-color: transparent;
-    border: 1px solid antiquewhite;
-    color: antiquewhite;
-    cursor: pointer;
-    transition: all 300ms ease-in-out;
+  background-color: transparent;
+  border: 1px solid antiquewhite;
+  color: antiquewhite;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
 }
 
 .button:hover {
-    background-color: antiquewhite;
-    color: rgb(97, 93, 89);
+  background-color: antiquewhite;
+  color: rgb(97, 93, 89);
 }

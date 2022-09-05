@@ -15,9 +15,12 @@ export default function Cards({ cities, closeFunction, isLoading }) {
         </div>
       )}
       {cities.length < 1 ? (
-        <div className={style.searchCard}>
-          <h1>Busca una ciudad o país</h1>
+        <div className="w-100 d-flex flex-column justify-content-center align-items-center">
+          <div className={style.searchCard}>
+            <h1>Busca una ciudad o país</h1>
+          </div>
         </div>
+        
       ) : (
         <div className={style.container}>
           {cities.map((city) => (

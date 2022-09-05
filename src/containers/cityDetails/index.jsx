@@ -19,12 +19,12 @@ export default function CityDetails({ selectCity }) {
         <div>
           <ul>
             <li>Estado: {details.weather}</li>
-            <li>Min: {details.min}</li>
-            <li>Max: {details.max}</li>
+            <li>Min: {details.min}º</li>
+            <li>Max: {details.max}º</li>
           </ul>
           <ul>
-            <li>Nubes: {details.clouds}</li>
-            <li>Viento: {details.wind}</li>
+            <li>Nubes: {details.clouds}%</li>
+            <li>Viento: {details.wind} m/s</li>
           </ul>
         </div>
 

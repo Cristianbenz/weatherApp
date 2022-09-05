@@ -10,7 +10,7 @@ export default function GetWeather() {
   function onSearch(city) {
     setLoading(true);
     const apiKey = "2da6e283cd50bbbb9f1adb7897591d84";
-    const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=sp&appid=${apiKey}`;
     axios(API_URL)
       .then( res => res.data)
       .then((data) => {

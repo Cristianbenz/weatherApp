@@ -18,7 +18,7 @@ export default function SearchBar({ onSearch }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className={sbs.form} onSubmit={handleSubmit}>
       <input onChange={handleChange} className={`${sbs.input}`} type={"text"} placeholder="🔎 Buscar..." />
       <button className={`${sbs.button}`}>Agregar</button>
     </form>
