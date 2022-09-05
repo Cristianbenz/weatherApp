@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 #root {
   background-image: url('https://images.ecestaticos.com/JYWtDktlcMuibPaxE4QGsQmLJOE=/4x110:2119x1302/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F566%2F166%2Fe24%2F566166e242c19971965461dca9509292.jpg');
   background-size: cover;

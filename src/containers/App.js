@@ -27,9 +27,6 @@ export default function App() {
         <Route path={'/ciudad/:cityId'}>
           <CityDetails selectCity={selectCity} />
         </Route>
-        <Route path={'/about'}>
-
-        </Route>
       </Switch>
     </div>
   );

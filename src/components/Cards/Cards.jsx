@@ -7,7 +7,13 @@ import style from "./cards.module.css";
 export default function Cards({ cities, closeFunction, isLoading }) {
   return (
     <>
-      {isLoading && <span className={style.loading}>CARGANDO...</span>}
+      {isLoading && (
+        <div className={style.loading}>
+          <div className='spinner-grow text-light' role="status">
+            <span className="visually-hidden" role="status" />
+          </div>
+        </div>
+      )}
       {cities.length < 1 ? (
         <div className={style.searchCard}>
           <h1>Busca una ciudad o país</h1>

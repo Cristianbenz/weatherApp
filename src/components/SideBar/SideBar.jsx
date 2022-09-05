@@ -24,13 +24,6 @@ export function SideBar({ onSearch }) {
           />
         </Link>
         <SearchBar onSearch={onSearch} />
-        <nav>
-          <ul>
-            <li>
-              <Link to={"/about"}>About</Link>
-            </li>
-          </ul>
-        </nav>
       </div>
       <span className={sbs.date}>{date.toLocaleString("es", formatDate)}</span>
     </div>

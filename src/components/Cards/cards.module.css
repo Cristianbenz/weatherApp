@@ -9,22 +9,41 @@
   font-weight: 600;
   border-radius: 10px;
   backdrop-filter: blur(2px);
+  animation: fade 500ms ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
 }
 
 .container {
+  position: relative;
   width: 90%;
+  height: max-content;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-  gap: 1.3rem;
+  justify-items: center;
+  column-gap: 10px;
+  row-gap: 40px;
   padding: 15px 30px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .loading {
   position: absolute;
   bottom: 50px;
-  left: 50%;
-  right: 50%;
-  font-size: 30px;
-  color: black;
+  width: 112%;
+  display: flex;
+  justify-content: center;
+}
+
+.loading div {
+  width: 60px;
+  height: 60px;
 }
