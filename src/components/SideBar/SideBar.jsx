@@ -17,6 +17,8 @@ export function SideBar({ onSearch }) {
   useEffect(() => {
    setShow(false) 
   }, [onSearch])
+  
+  
 
   
   return (

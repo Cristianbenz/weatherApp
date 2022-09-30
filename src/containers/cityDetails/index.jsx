@@ -12,6 +12,8 @@ export default function CityDetails({ selectCity }) {
     setDetails(city);
   }, [cityId, selectCity]);
 
+  if(!details) return <div className={styles.notFound}><h1>No se encontro la ciudad</h1></div>
+
   return (
     <div className={styles.container}>
       <h1 className={styles.name}>{details.name}</h1>

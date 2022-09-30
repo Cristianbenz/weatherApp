@@ -7,13 +7,6 @@ import style from "./cards.module.css";
 export default function Cards({ cities, closeFunction, isLoading }) {
   return (
     <>
-      {isLoading && (
-        <div className={style.loading}>
-          <div className='spinner-grow text-light' role="status">
-            <span className="visually-hidden" role="status" />
-          </div>
-        </div>
-      )}
       {cities.length < 1 ? (
         <div className="w-100 d-flex flex-column justify-content-center align-items-center">
           <div className={style.searchCard}>
@@ -35,6 +28,13 @@ export default function Cards({ cities, closeFunction, isLoading }) {
               onClose={() => closeFunction(city.id)}
             />
           ))}
+        </div>
+      )}
+      {isLoading && (
+        <div className={style.loading}>
+          <div className='spinner-grow text-light' role="status">
+            <span className="visually-hidden" role="status" />
+          </div>
         </div>
       )}
     </>
