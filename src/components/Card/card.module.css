@@ -1,5 +1,6 @@
 .card {
   color: antiquewhite;
+  background-color: rgb(90, 83, 76);
   width: 20rem;
   height: 13rem;
   position: relative;
@@ -72,24 +73,6 @@
     text-decoration: none;
     color: antiquewhite;
 }
-
-.drizzle {
-  background-image: url("https://media.istockphoto.com/videos/heavy-rain-video-id454413420?s=640x640");
-  background-size: cover;
-}
-
-.cloud {
-  background-image: url("https://p1.pxfuel.com/preview/748/977/304/storm-sky-cloudy-weather.jpg");
-  background-size: cover;
-  background-position: bottom;
-}
-
-.sunny {
-  background-image: url("https://us.123rf.com/450wm/leonidtit/leonidtit1703/leonidtit170300214/73346198-fantastic-yellow-sunset-and-cloudy-sky-on-a-sunny-day-with-fluffy-clouds-dramatic-and-picturesque-mo.jpg?ver=6");
-  background-size: cover;
-  background-position: bottom;
-}
-
 
 @media screen and (max-width: 430px) {
   .card {
